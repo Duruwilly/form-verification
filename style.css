@@ -1,0 +1,236 @@
+/* root variables */
+:root {
+ --interest-color: red;
+ --color-black: #000;
+ --color-white: #fff;
+ --transition: all 300ms ease-in-out; 
+}
+
+* {
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ outline: 0;
+ box-sizing: border-box;
+ padding: 0; 
+ text-decoration: none;
+ list-style: none;
+ border: 0;
+ color: var(--color-white);
+}
+
+img {
+ width: 100%;
+}
+
+html {
+ font-size: 15px;
+ overflow-x: hidden;
+ color: var(--color-white);
+}
+
+section {
+ padding: 2rem 9%
+
+}
+
+
+section.login {
+ position: relative;
+ min-height: 100vh;
+ background: 
+ linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), url("images/login-back.jpg") no-repeat center center/cover;
+}
+
+section.login .container {
+ background: var(--color-black);
+ opacity: .8;
+ height: 90vh;
+  width: 56vw;
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 25px;
+}
+
+section.login .container .content header {
+ display: flex;
+ flex-direction: row;
+ color: var(--color-white);
+ justify-content: space-between;
+ padding: 1rem 2rem;
+}
+
+.logo-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10% 0;
+}
+
+.logo-content i {
+ color: var(--interest-color);
+ font-size: 5rem;
+ font-weight: bolder;
+}
+
+.logo-content p {
+ color: var(--color-white);
+ margin-top: 1rem;
+ font-size: 1.3rem;
+}
+
+section.login .container .content form {
+ padding: 0rem 1.5rem;
+ }
+
+ section.login .container .content span {
+  display: block;
+  padding: .5rem 0;
+ }
+
+section.login .container .content input{
+ display: block;
+ background: transparent;
+ border-bottom: 2px solid var(--color-white);
+ width: 100%;
+
+}
+
+section.login .container .content button {
+ background: var(--interest-color);
+ padding: .3rem 1.5rem;
+ border-radius: 50px;
+ color: var(--color-white);
+ margin: 2rem 0 .5rem 30%;
+ cursor: pointer;
+}
+
+section.login .container .content .forget-p {
+ text-align: center;
+ display: block;
+ color: var(--color-white);
+}
+
+
+.sign-up {
+ text-align: center;
+ margin-top: 30%;
+}
+
+.sign-up a {
+ color: var(--interest-color);
+ font-weight: bolder;
+ font-size: .8rem;
+}
+
+
+ 
+
+
+
+section.signup {
+ position: relative;
+ min-height: 100vh;
+ background: linear-gradient(90deg,rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("images/login-back.jpg") no-repeat center center/cover;
+}
+
+
+section.signup .signup-container {
+ background: var(--color-black);
+ opacity: .8;
+ height: 90vh;
+ width: 56vw;
+ max-width: 300px;
+ border-radius: 25px;
+ margin: 0 auto;
+}
+
+section.signup .signup-container .signup-content header {
+ display: flex;
+ flex-direction: row;
+ color: var(--color-white);
+ justify-content: space-between;
+ padding: 1rem 2rem;
+}
+
+.nav {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 1rem 2rem;
+ border-bottom: 2px solid var(--interest-color);
+}
+
+.nav .fa-exclamation {
+ font-size: 2rem;
+ color: var(--interest-color);
+}
+
+.nav .fa-bars {
+ font-size: 1.2rem;
+ padding: .8rem 0;
+}
+
+.signup-text {
+ padding: 0rem 1.5rem;
+ text-transform: capitalize;
+ margin-top: 1rem;
+ font-size: 1.5rem;
+}
+
+section.signup .signup-container .signup-content form {
+ padding: 0rem 1.5rem;
+}
+
+section.signup .signup-container .signup-content span {
+ display: block;
+ padding: .5rem 0;
+}
+section.signup .signup-container .signup-content .form-input {
+ background: transparent;
+ border-bottom: 2px solid var(--color-white);
+ width: 100%; 
+}
+
+.checkbox {
+ margin-top: 1rem;
+}
+
+.cancel-signup {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-top: 2rem;
+}
+
+#cancel {
+ border: 2px solid var(--interest-color);
+ border-radius: 40px;
+ padding: .2rem 1rem;
+}
+
+#sign-up {
+ background: var(--interest-color);
+ color: var(--color-black);
+ font-weight: bolder;
+ border-radius: 40px;
+ padding: .2rem 1rem;
+}
+
+#sign-up i {
+ color: var(--color-black);
+}
+
+
+#email_error,
+#pass_error {
+ margin-top: 5px;
+ width: 100%;
+ font-size: 1rem;
+ color: #c62828;
+ background: rgba(255,0,0,0.1);
+ text-transform: capitalize;
+ text-align: center;
+ border-radius: 3px;
+ border: 1px solid #ef9a9a;
+ display: none;
+}

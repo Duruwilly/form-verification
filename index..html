@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>signup</title>
+
+ <!--font awesome cdn-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<!--google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+ <!--custom css-->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section class="signup">
+  
+  <div class="signup-container">
+
+   <div class="signup-content">
+
+     <header>
+      <p>5:46</p>
+      <div class="ba3">
+       <i class="fas fa-wifi"></i>
+       <i class="fas fa-battery-full"></i>
+      </div>
+     </header>
+
+     <div class="nav">
+      <i class="fas fa-exclamation"></i>
+      <i class="fas fa-bars"></i>
+     </div>
+
+     <div class="signup-text">
+      <h3>sign up</h3>
+     </div>
+   
+     <form action="" name="form" onsubmit="return  validateSignUp()">
+      
+      <span>Name</span>
+      <input type="text"class="form-input" name="name">
+      <span>Phone No</span>
+      <input type="text"class="form-input" name="tel">
+      <span>Email</span>
+      <input type="text"class="form-input" name="email">
+      <span>Password</span>
+      <input type="text"class="form-input" name="password1">
+      <span>Comfirm Password</span>
+      <input type="text"class="form-input" name="password2">
+
+      <div class="checkbox">
+      <input type="checkbox" id="" required> you agree to the terms and condition of interest.
+      </div>
+
+      <div class="cancel-signup">
+      <a href="index.html" id="cancel">Cancel</a>
+      <a href=""><button type="submit" id="sign-up">Sign up <i class="fas fa-arrow-right"></i></button></a>
+      </div>
+     
+    </form>
+   
+  </div>
+
+   </div>
+ 
+ </section>
+
+<script src="validate.js"></script>
+</body>
+</html>
